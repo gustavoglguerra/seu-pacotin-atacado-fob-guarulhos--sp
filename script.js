@@ -1,3 +1,5 @@
+alert("JS NOVO CARREGOU");
+
 function calcular() {
   const produto = document.getElementById("produto");
   const quantidade = Number(document.getElementById("quantidade").value);
