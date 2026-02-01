@@ -11,10 +11,11 @@ function calcular() {
   const resultado = document.getElementById("resultado");
 
   // Formatação brasileira
-  const valorFormatado = valorTotal.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL"
-  });
+const valorFormatado = valorTotal.toLocaleString("pt-BR", {
+  style: "currency",
+  currency: "BRL"
+});
+
 
   if (pesoTotal < 500) {
     resultado.innerHTML = `
@@ -33,9 +34,12 @@ Valor total: ${valorFormatado}`
   );
 
   resultado.innerHTML = `
-    ✅ Peso total: <strong>${pesoTotal} kg</strong><br>
-    💰 Valor total: <strong>${valorFormatado}</strong><br><br>
-    <a href="https://wa.me/55SEUNUMEROAQUI?text=${mensagem}" target="_blank">
+    resultado.innerHTML = `
+  <p><strong>Peso total:</strong> ${pesoTotal} kg</p>
+  <p><strong>Valor total:</strong> ${valorFormatado}</p>
+`;
+
+    <a href="https://wa.me/5531990728646?text=${mensagem}" target="_blank">
       Enviar pedido pelo WhatsApp
     </a>
   `;
