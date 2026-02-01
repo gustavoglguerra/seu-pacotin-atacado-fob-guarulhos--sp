@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Pedido</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Simulador de Pedido</h1>
+<p class="alerta">
+  VENDA APENAS ATACADO - ACIMA DE 500 KG - FOB GUARULHOS - SÃO PAULO
+</p>
+
+<h2>Tabela de Preços (R$/milheiro)</h2>
+
+<table class="tabela-precos">
+  <thead>
+    <tr>
+      <th>Tamanho</th>
+      <th>Valor por milheiro (R$)</th>
+      <th>Peso por milheiro (kg)</th>
+    </tr>
+  </thead>
+  <tbody id="tabelaDados"></tbody>
+</table>
+
+<hr>
+
+<h2>Calculadora</h2>
+
+<table class="calculadora">
+  <thead>
+    <tr>
+      <th>Tamanho</th>
+      <th>Quantidade (milheiros)</th>
+      <th>Valor por milheiro</th>
+      <th>Valor total</th>
+      <th>Peso total</th>
+    </tr>
+  </thead>
+  <tbody id="tabelaCalc"></tbody>
+</table>
+
+<div class="resumo">
+  <p><strong>PESO TOTAL:</strong> <span id="pesoFinal">0</span> kg</p>
+  <p><strong>VALOR TOTAL:</strong> R$ <span id="valorFinal">0</span></p>
+  <p id="mensagem"></p>
+</div>
+
+<button id="btnWhatsapp" disabled>
+  Enviar pedido no WhatsApp
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
